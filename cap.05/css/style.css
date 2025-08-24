@@ -1,0 +1,28 @@
+body{
+    background-color: lightblue;
+    font-size: large;
+    font-family: cursive;
+}
+
+img.normal {
+    float: left;
+    height: 300px;
+    width: 300px;
+    border-radius: 10%;
+}
+
+img.alta {
+    float: left;
+    height: 400px;
+    width: 320px;
+    border-radius: 10%;
+}
+
+h1 {
+    border-bottom-style: inset;
+    
+}
+pre {
+    font-size: 1.2em;
+}
+

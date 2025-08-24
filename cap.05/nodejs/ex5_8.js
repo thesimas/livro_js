@@ -1,0 +1,27 @@
+const prompt = require("prompt-sync") ()
+
+console.clear()
+console.log("Progrma de Copas do Mundo. Digite '0' para sair. ")
+
+console.log("-------------------------------------------------\n")
+
+console.log("Me informe um ano e direi se é ano de COPA do mundo ou não!")  
+
+console.log("-----------------------------------------------------------\n") 
+
+do {
+    const ano = Number(prompt("Ano:  "))
+
+    if(ano == 0){
+        break
+    }
+    else if(ano == 1942 || ano == 1946){
+        console.log("Não houve Copa durante esse período.\nO mundo estava passando pela Segunda Guerra Mundial!")
+    }
+    else if(ano >= 1930 && ano % 4 == 2){   
+        console.log(`Sim! ${ano} é ano de Copa do Mundo!`)
+    }else{
+        console.log(`Não... ${ano}... não é ano de Copa do Mundo!`)
+    }
+    
+}while(true)

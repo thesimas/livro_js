@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 6.2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/livrojs.png" type="image/x-icon">
+</head>
+<body>
+    <img src="img/ex6_2.jpg" alt="jogo dos números" class="normal">
+    <h1>Jogo Descubra o número</h1>
+    <form>
+        <p>Número:
+            <input type="number" id="inNumero" min="0" max="100" required autofocus>
+            <input type="submit" value="Apostar" id="btSubmit">
+            <input type="button" value="Jogar Novamente" class="oculta" id="btNovo">
+        </p>
+    </form>
+    <h3>Erros: <span id="outErros">0</span></h3>
+    <h3>Chances: <span id="outChances">6</span></h3>
+    <h3 id="outDica" style="font-family: italic;">Dica: É um número entre 1 e 100</h3>
+    <script src="js/ex6_2.js"></script>
+</body>
+</html>
